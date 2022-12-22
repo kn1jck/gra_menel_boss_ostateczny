@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <img style="width: 50px;" src="assets/piwo.jpg">
+    <h3 id="textPieniazki"></h3>
+    <br>
+    <div id="stats">
+        <h1>STATYSTYKI BOHATERA</h1>
+        <p id="dmg1">WYŚWIETLĄ SIĘ PO ZAATAKOWANIU POTWORA</p>
+        <p id="armor1"></p>
+        <p id="omnivamp1"></p>
+    </div>
+    <h3 id="textJan"></h3>
+    <img style="width: 100px;" src="/assets/knight.png"><br>
+    <button onclick="zaatakuj(JanZieloneDrzewo, Boss1)" id="attackbutton">ZAATAKUJ POTWORA</button><br><br>
+    <button onclick="nowyboss()" id="respawnbutton">NOWY BOSS</button>
+    <!-- <p id="attackchance"></p> -->
+    <p id="obrcrit">NASTEPNY ATAK ZADANA OBRAZENIA KRYTYCZNE!</p>
+    <h3 id="textJeremiasz"></h3>
+    <img style="width: 100px;" src="assets/boss.jpg">
+    <br><br><button onclick="reset()" id="reset" disabled>ZRESETUJ GRACZA</button>
+    <button disabled id="odrodzenie" onclick="odrodzenie">ODRODŹ + LVL WYZEJ</button>
+    <br><br><button id="armorbuy" onclick="buyitem1()" disabled>ARMOR 500 PIW</button>
+    <button disabled  id="critbuy" onclick="">CRIT RATE 2000 PIW</button>
+    <button disabled id="dmgbuy" onclick="">DMG 10000 PIW</button>
+    <button disabled id="omnibuy" onclick="">OMNIVAMP 100000 PIW</button>
+    <p>wersja 1.0</p>
+    <script src="index.js"></script>
+</body>
+</html>
